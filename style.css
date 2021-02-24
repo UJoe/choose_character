@@ -1,0 +1,77 @@
+body {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+   text-align: center;
+   color: aqua;
+   text-shadow: 1px 2px 2px blue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  text-align: center;
+  background-color:goldenrod;
+  border: double 3px darkred;
+  border-radius: 10%;
+  padding: 30px;
+}
+
+#characterSheet {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  background-color: yellowgreen;
+  border: double 3px darkgreen;
+  border-radius: 10%;
+}
+
+input,
+select {
+  border: 2px solid currentcolor;
+  margin: 10px auto;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+input:invalid:focus {
+  background-image: linear-gradient(pink, lightgreen);
+}
+
+.pics {
+  height: 50px;
+  margin: 10px auto;
+}
+
+#o-name {
+  text-align: center;
+}
+
+#i-gen {
+  background-image: linear-gradient(to right, yellow, red, yellow);
+  color: blue;
+  transform: scale(2);
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#o-gen {
+  display: block;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+}

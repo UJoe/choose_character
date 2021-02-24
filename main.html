@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <h1>HELLO, ADVENTURER!<br>WELCOME TO HONEYWOOD!<br>CHOOSE YOUR CHARACTER</h1>
+  <div class="container">
+    <div id="form">
+      <form>
+        <label for="i-name">Name:</label>
+        <input type="text" id="i-name" minlength="3"></input>
+        <br><br>
+        <label for="i-race">Race:</label>
+        <select id="i-race">
+          <option value="elf">elf</option>
+          <option value="dwarf">dwarf</option>
+          <option value="orc">orc</option>
+        </select>
+        <br><br>
+        <label for="i-gender">Gender:</label>
+        <select id="i-gender" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+        <br><br>
+        <label for="i-class">Class:</label>
+        <select id="i-class" name="class">
+          <option value="fighter">fighter</option>
+          <option value="wizard">wizard</option>
+        </select>
+        <br><br>
+        </form>
+    </div>
+    <div id="characterSheet">
+      <h3 id="o-name"></h3><br>
+      <img class="pics" src="./img/elf_x.png" alt="race" id="o-race"><br>
+      <img class="pics" src="./img/male_x.png" alt="gender" id="o-gender"><br>
+      <img class="pics" src="./img/fighter_x.png" alt="class" id="o-class"><br>
+    </div>
+  </div>
+  <br><br>
+  <button id="i-gen">Generate Character</button>
+  <br>
+  <img src="./img/neutral.png" title="final character" id="o-gen">
+</body>
+
+</html>
